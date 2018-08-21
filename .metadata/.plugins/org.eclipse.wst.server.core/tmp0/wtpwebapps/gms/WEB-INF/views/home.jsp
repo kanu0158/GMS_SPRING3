@@ -5,11 +5,11 @@
 	<title>Home</title>
 	<script src="${context}/resources/js/app.js"></script>
 </head>
+<!-- TEST -->
 <body>
 <h1>
 	Hello world!  
 </h1>
-
 <script>
 	common.main('${context}');
 </script>
