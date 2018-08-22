@@ -2,12 +2,10 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%><!-- jstl.jar 사용하기 위해 한 것 -->
 <!doctype html>
 <html lang="en">
-<jsp:include page="../common/head.jsp"/>
 <body>
 <div id="wrapper">
 	<div id="header">
 		<h1>관리자페이지</h1>
-		<jsp:include page="../common/menuBox.jsp"/>
 	</div> 	<!-- header end -->
 	<div id="content">
 		<c:choose>
@@ -26,7 +24,6 @@
 		</c:choose>
 	</div> <!-- content end -->
 	<div id="footer">
-		<jsp:include page="../common/footerBox.jsp"/>
 	</div>
 </div>
 <script>

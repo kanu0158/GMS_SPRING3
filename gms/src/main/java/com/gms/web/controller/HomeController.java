@@ -28,7 +28,7 @@ public class HomeController {
 		session.setAttribute("context", context);
 		//model.addAttribute("serverTime", "");
 		//모델
-		return "main";
+		return "public:common/content.tiles";
 	}
 	
 }
