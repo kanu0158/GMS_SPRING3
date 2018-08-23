@@ -78,7 +78,7 @@
 						data-toggle="dropdown">PAGES <b class="caret"></b></a>
 						<ul class="dropdown-menu">
 							<li><a id='loginBtn'>로그인</a></li>
-							<li><a href="single-post.html">SINGLE POST</a></li>
+							<li><a id='addBtn'>회원가입</a></li>
 							<li><a href="portfolio.html">PORTFOLIO</a></li>
 							<li><a href="single-project.html">SINGLE PROJECT</a></li>
 						</ul></li>

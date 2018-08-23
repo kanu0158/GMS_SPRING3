@@ -5,26 +5,26 @@
          version="3.1">
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
-		<param-value>classpath:META-INF/*-context.xml</param-value>
+		<param-value>classpath:META-INF/*-context.xml</param-value><!-- 끝은 타일즈 -->
 	</context-param>
 	
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
 
-	<servlet>
+	<servlet><!-- 키 -->
 		<servlet-name>appServlet</servlet-name>
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
 		<init-param>
 			<param-name>contextConfigLocation</param-name>
-			<param-value>classpath:META-INF/*-context.xml</param-value>
+			<param-value>classpath:META-INF/*-context.xml</param-value><!-- 서블릿실행 갔다왔으니 또 갈필요없어 -->
 		</init-param>
-		<load-on-startup>1</load-on-startup>
+		<load-on-startup>1</load-on-startup><!-- 1순위로 작동  키&밸류-->
 	</servlet>
 		
-	<servlet-mapping>
+	<servlet-mapping><!-- 밸류 -->
 		<servlet-name>appServlet</servlet-name>
-		<url-pattern>/</url-pattern>
+		<url-pattern>/</url-pattern> <!-- 홈컨트롤러로 이동 @requestmapping("/") -->
 	</servlet-mapping>
 	 <servlet-mapping>
     	<servlet-name>default</servlet-name>
