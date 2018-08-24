@@ -1,7 +1,9 @@
 package com.gms.web.domain;
 
-import lombok.Data;
+import org.springframework.stereotype.Component;
 
+import lombok.Data;
+@Component
 @Data
 public class MemberDTO {
 	private String userId,

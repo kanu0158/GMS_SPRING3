@@ -43,13 +43,12 @@
 	</div>
 	<div id="portfoliowrap">
 		<h3>LATEST WORKS</h3>
-
 		<div class="portfolio-centered">
 			<div class="recentitems portfolio">
 				<div class="portfolio-item graphic-design">
 					<div class="he-wrap tpl6">
-						<img src="${context}/resources/img/portfolio/portfolio_09.jpg"
-							alt="">
+						<img src="${context}/resources/img/portfolio/DRAD.jpg" alt="">
+						<%-- <img src="${context}/resources/img/portfolio/portfolio_09.jpg" alt=""> --%>
 						<div class="he-view">
 							<div class="bg a0" data-animate="fadeIn">
 								<h3 class="a1" data-animate="fadeInDown">A Graphic Design

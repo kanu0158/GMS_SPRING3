@@ -15,15 +15,10 @@
 		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd
 		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.3.xsd
 		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.3.xsd">
-	
-	
-	<mvc:annotation-driven />
+ <!-- 객체       메소드 --> 
+	<mvc:annotation-driven /> <!-- mvc객체가 어노테이션 살펴보고 new Controller 해서 객체를 담아옴 -->
 
 	<mvc:resources mapping="/resources/**" location="/resources/" />
-		<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-					<property name="prefix" value="/WEB-INF/views/" />
-					<property name="suffix" value=".jsp" />
-				</bean>
 	<bean class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
 		<property name="viewResolvers">
 			<list>
