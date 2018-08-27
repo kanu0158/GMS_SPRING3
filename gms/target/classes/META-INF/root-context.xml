@@ -42,7 +42,6 @@
         </property>
     </bean> 
 	
-	
 	<context:component-scan base-package="com.gms.web" />
 	
 	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
@@ -51,5 +50,10 @@
 		<property name="username" value="mariadb"/>
 		<property name="password" value="mariadb"/>
 	</bean>
-		
+	<bean id="sqlSessionFactoryBean" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="dataSource"></property>
+		<property name="configLocation"
+			value="classpath:config/mybatis-config.xml"
+		></property>
+	</bean>	
 </beans>

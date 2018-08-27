@@ -15,7 +15,7 @@ public class MariadbConn {
 					"mariadb");
 			stmt = conn.createStatement();
 			String sql = String.format(
-					"SELECT USERID FROM MEMBER "
+					"SELECT USERID FROM MEMBER WHERE USERID = 'Y1' "
 					);
 			ResultSet rs = stmt.executeQuery(sql);			
 			if(rs.next()) {

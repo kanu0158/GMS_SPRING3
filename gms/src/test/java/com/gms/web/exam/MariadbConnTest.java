@@ -9,7 +9,8 @@ public class MariadbConnTest {
 	@Test
 	public void test() {
 		MariadbConn m = new MariadbConn();
-		assertEquals("hong", m.exam());
+		System.out.println(m.exam());
+		assertEquals("Y1", m.exam());
 		
 	}
 
