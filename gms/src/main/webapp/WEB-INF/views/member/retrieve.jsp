@@ -34,6 +34,7 @@
 </div>
 <!-- content end -->
 <script>
+//
 app.user.init({userId : '${user.userId}',
 				password : '${user.password}'});
 </script>	
