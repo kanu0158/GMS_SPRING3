@@ -1,6 +1,7 @@
 "use strict";
 /*만약 app이 있다면 있는걸로 대체하고 없으면 새로 만들어라*/
 var app = app || {};
+var user = user || {};
 app = {
 		init : x =>{//화면과 기능을 만듬
 			console.log('step 1');
@@ -48,7 +49,10 @@ app = {
 			$('#logOutBtn').click(()=>{
 				location.href =app.x()+'/member/logout';
 			});
-			
+			$('#mypageBtn').click(()=>{
+				alert('마이페이지 버튼클릭');
+				location.href = app.x()+'/member'
+			})
 			$('#removeBtn').click(()=>{
 				location.href =app.x()+'/move/user/member/remove';
 			});
@@ -127,3 +131,14 @@ app.uI = ()=>{
 app.ps = ()=>{
 	return app.user.getPassword('password');
 };
+
+user.session = x=>{
+	$.each(x,(k,v)=>{
+		alert('key:'+k+', value'+v);
+		sessionStorage.setItem(k, v);
+	});
+	alert(sessionStorage.getItem('userId'));
+};
+
+
+

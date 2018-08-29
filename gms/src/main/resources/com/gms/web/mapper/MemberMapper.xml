@@ -14,7 +14,7 @@
 	(#{userId},#{teamId},#{password},#{name},#{ssn},#{roll},#{age},#{gender},#{subject});
   </insert>
   <select id="login" resultType="com.gms.web.domain.MemberDTO">
-    SELECT NAME FROM MEMBER 
+    SELECT USERID, TEAMID, PASSWORD, NAME, SSN, ROLL, AGE, GENDER, SUBJECT FROM MEMBER 
     WHERE USERID LIKE #{userId}
     	AND PASSWORD LIKE #{password}
   </select>

@@ -34,7 +34,10 @@
 </div>
 <!-- content end -->
 <script>
-//
-app.user.init({userId : '${user.userId}',
-				password : '${user.password}'});
+/* app.user.init({userId : '${user.userId}',
+				password : '${user.password}'}); */
+user.session({userId : '${user.userId}',
+			  name : '${user.name}',
+			  teamId : '${user.teamId}',
+		      roll : '${user.roll}'});
 </script>	

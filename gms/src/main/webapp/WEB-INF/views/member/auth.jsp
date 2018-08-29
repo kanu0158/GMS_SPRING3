@@ -75,12 +75,12 @@
 					<li class="active"><a href="contact.html">CONTACT</a></li>
 					<li class="dropdown">
 					<li class="active"><a href="#" class="dropdown-toggle"
-						data-toggle="dropdown">${user.name} PAGES <b class="caret"></b></a>
+						data-toggle="dropdown">${user.name} PAGES<b class="caret"></b></a>
 						<ul class="dropdown-menu">
 							<li><a id="logOutBtn">로그아웃</a></li>
 							<li><a id="removeBtn">회원탈퇴</a></li>
 							<li><a id="modifyBtn">정보수정</a></li>
-							<li><a href="single-project.html">SINGLE PROJECT</a></li>
+							<li><a id="mypageBtn">마이페이지</a></li>
 						</ul></li>
 					</li>
 				</ul>
@@ -88,3 +88,9 @@
 			<!--/.nav-collapse -->
 		</div>
 	</div>
+<script>
+	/* user.session({userId : '${user.userId}',
+			      name : '${user.name}',
+			      teamId : '${user.teamId}',
+			      roll : '${user.roll}'}); */
+</script>

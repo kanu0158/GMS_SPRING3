@@ -80,6 +80,7 @@ public class MemberController {
 		System.out.println("---userId : "+member.getUserId());
 		System.out.println("---password : "+member.getPassword());
 		String path = "auth:member/login.tiles";
+		
 		if(memberService.login(member)) {
 			System.out.println("로긴 성공");
 			member = memberService.retrieve(member);
@@ -89,7 +90,7 @@ public class MemberController {
 			System.out.println(member.getName());
 			System.out.println("-------------");
 			model.addAttribute("user",member);
-			/*path = "loginSuccess";*/
+			path = "loginSuccess";
 			path = "user:member/retrieve.tiles";
 		}else{
 			System.out.println("로긴실패");
