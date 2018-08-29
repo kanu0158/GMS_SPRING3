@@ -13,5 +13,6 @@ public class MemberDTO {
 	age,
 	roll, 
 	teamId,
-	password;
+	password,
+	subject;
 }

@@ -75,11 +75,11 @@
 					<li class="active"><a href="contact.html">CONTACT</a></li>
 					<li class="dropdown">
 					<li class="active"><a href="#" class="dropdown-toggle"
-						data-toggle="dropdown">PAGES <b class="caret"></b></a>
+						data-toggle="dropdown">${user.name} PAGES <b class="caret"></b></a>
 						<ul class="dropdown-menu">
-							<li><a id='logOutBtn'>로그아웃</a></li>
-							<li><a id='addBtn'>회원가입</a></li>
-							<li><a href="portfolio.html">PORTFOLIO</a></li>
+							<li><a id="logOutBtn">로그아웃</a></li>
+							<li><a id="removeBtn">회원탈퇴</a></li>
+							<li><a id="modifyBtn">정보수정</a></li>
 							<li><a href="single-project.html">SINGLE PROJECT</a></li>
 						</ul></li>
 					</li>
@@ -88,4 +88,3 @@
 			<!--/.nav-collapse -->
 		</div>
 	</div>
-	

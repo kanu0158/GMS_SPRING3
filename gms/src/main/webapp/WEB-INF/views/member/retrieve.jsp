@@ -1,11 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <div id="content">
-	<h1>retrieve page 진입 ${img}${profile} </h1>
+	<h1>${user.name} page</h1>
 	<div>
 		<table id="mypage-table">
 			<tr><!-- home/bugs.PNG -->
-				<td rowspan="3"><img id="img" src="${img}${profile}" alt="" /></td>
+				<td rowspan="3"></td>
 				<td>ID</td>
 				<td colspan="2">${user.userId}</td>
 			</tr>
@@ -31,10 +31,9 @@
 			</tr>
 		</table>
 	</div>
-	<div>
-		<a id="logoutBtn"><button>로그아웃</button></a> <a id="myPageMoveToModify"><button>정보수정</button></a>
-		<a id="myPageMoveToRemove"><button>계정탈퇴</button></a>
-	</div>
-
 </div>
 <!-- content end -->
+<script>
+app.user.init({userId : '${user.userId}',
+				password : '${user.password}'});
+</script>	

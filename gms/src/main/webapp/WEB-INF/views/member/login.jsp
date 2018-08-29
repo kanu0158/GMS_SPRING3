@@ -2,9 +2,9 @@
 	<div id="content">
 		<div id="user-login-layout">
 		<h1>사용자로그인</h1>
-		<form id="user-login-form">
-		ID: <input type="TEXT" name="userId" /><br>
-		PASS: <input TYPE="TEXT" name="userPass" /><br>
+		<form id="loginForm">
+		ID: <input type="TEXT" id="userId" name="userId" /><br>
+		PASS: <input TYPE="TEXT" id="password" name="password" /><br>
 		<input id="loginFormBtn" type="button" value="전 송"/> 
 		</form>
 		</div>
