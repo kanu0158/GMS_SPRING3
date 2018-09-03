@@ -31,6 +31,7 @@ public class HomeController {
 		logger.info("HomeControllers ::: move() {}.", "ENTER");
 		String ret = prefix+":"+dir+"/"+page+".tiles";
 		logger.info("HomeControllers ::: ret {}.", ret );
+		//힘내라힘
 		return ret;
 	}
 	
